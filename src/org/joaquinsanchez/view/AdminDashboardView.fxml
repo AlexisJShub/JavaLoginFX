@@ -1,1 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0"
+            prefWidth="950.0"
+            styleClass="fondo-principal"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.js.controller.AdminDashboardController">
+
+    <stylesheets>
+        <URL value="@/org/js/view/style/admindashboardview.css"/>
+    </stylesheets>
+
+    <children>
+
+        <!-- Menú lateral -->
+        <VBox prefHeight="600.0"
+              prefWidth="230.0"
+              spacing="12.0"
+              styleClass="menu-lateral">
+
+            <children>
+
+                <Label text="JAVALOGIN"
+                       styleClass="logo"/>
+
+                <Label text="ADMINISTRACIÓN"
+                       styleClass="rol"/>
+
+                <Button text="Inicio"
+                        prefWidth="190.0"
+                        styleClass="boton-menu-activo"/>
+
+                <Button text="Usuarios"
+                        prefWidth="190.0"
+                        onAction="#eventoAbrirUsuarios"
+                        styleClass="boton-menu"/>
+
+                <Button text="Empleados"
+                        prefWidth="190.0"
+                        styleClass="boton-menu"/>
+
+                <Button text="Reportes"
+                        prefWidth="190.0"
+                        styleClass="boton-menu"/>
+
+                <Button fx:id="btnSalir"
+                        text="Cerrar sesión"
+                        onAction="#eventoSalir"
+                        prefWidth="190.0"
+                        styleClass="boton-salir"/>
+
+            </children>
+        </VBox>
+
+        <!-- Encabezado -->
+        <HBox layoutX="230.0"
+              prefHeight="90.0"
+              prefWidth="720.0"
+              styleClass="encabezado">
+
+            <children>
+
+                <VBox spacing="5.0">
+                    <children>
+
+                        <Label text="Panel de administración"
+                               styleClass="titulo"/>
+
+                        <Label fx:id="lblBienvenida"
+                               text="Bienvenido administrador"
+                               styleClass="bienvenida"/>
+
+                    </children>
+                </VBox>
+
+            </children>
+        </HBox>
+
+        <!-- Contenido principal -->
+        <VBox layoutX="270.0"
+              layoutY="125.0"
+              spacing="25.0">
+
+            <children>
+
+                <Label text="Resumen general"
+                       styleClass="subtitulo"/>
+
+                <HBox spacing="20.0">
+
+                    <children>
+
+                        <VBox prefHeight="135.0"
+                              prefWidth="200.0"
+                              styleClass="tarjeta">
+
+                            <children>
+                                <Label text="Usuarios"
+                                       styleClass="tarjeta-titulo"/>
+
+                                <Label text="24"
+                                       styleClass="tarjeta-numero"/>
+
+                                <Label text="Registrados"
+                                       styleClass="tarjeta-descripcion"/>
+                            </children>
+
+                        </VBox>
+
+                        <VBox prefHeight="135.0"
+                              prefWidth="200.0"
+                              styleClass="tarjeta">
+
+                            <children>
+                                <Label text="Empleados"
+                                       styleClass="tarjeta-titulo"/>
+
+                                <Label text="12"
+                                       styleClass="tarjeta-numero"/>
+
+                                <Label text="Activos"
+                                       styleClass="tarjeta-descripcion"/>
+                            </children>
+
+                        </VBox>
+
+                        <VBox prefHeight="135.0"
+                              prefWidth="200.0"
+                              styleClass="tarjeta">
+
+                            <children>
+                                <Label text="Reportes"
+                                       styleClass="tarjeta-titulo"/>
+
+                                <Label text="8"
+                                       styleClass="tarjeta-numero"/>
+
+                                <Label text="Este mes"
+                                       styleClass="tarjeta-descripcion"/>
+                            </children>
+
+                        </VBox>
+
+                    </children>
+                </HBox>
+
+                <VBox prefHeight="190.0"
+                      prefWidth="640.0"
+                      styleClass="panel-informacion">
+
+                    <children>
+
+                        <Label text="Actividad reciente"
+                               styleClass="panel-titulo"/>
+
+                        <Label text="Aquí aparecerán las acciones recientes del sistema."
+                               styleClass="panel-texto"/>
+
+                    </children>
+
+                </VBox>
+
+            </children>
+        </VBox>
+
+    </children>
+</AnchorPane>

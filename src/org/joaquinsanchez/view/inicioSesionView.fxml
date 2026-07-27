@@ -1,1 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="600.0"
+            prefWidth="950.0"
+            styleClass="fondo-principal"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.js.controller.InicioSesionController">
+
+    <stylesheets>
+        <URL value="@/org/js/view/style/iniciosesionview.css"/>
+    </stylesheets>
+
+    <children>
+
+        <!-- Círculos decorativos de fondo -->
+        <Circle radius="95.0" layoutX="60.0" layoutY="40.0" styleClass="circulo-decorativo-1"/>
+        <Circle radius="65.0" layoutX="900.0" layoutY="90.0" styleClass="circulo-decorativo-2"/>
+        <Circle radius="120.0" layoutX="890.0" layoutY="560.0" styleClass="circulo-decorativo-1"/>
+        <Circle radius="55.0" layoutX="40.0" layoutY="540.0" styleClass="circulo-decorativo-2"/>
+        <Circle radius="40.0" layoutX="480.0" layoutY="20.0" styleClass="circulo-decorativo-3"/>
+        <Circle radius="30.0" layoutX="150.0" layoutY="300.0" styleClass="circulo-decorativo-3"/>
+        <Circle radius="45.0" layoutX="800.0" layoutY="320.0" styleClass="circulo-decorativo-2"/>
+
+        <!-- Barra superior -->
+        <HBox prefHeight="52.0"
+              prefWidth="950.0"
+              alignment="CENTER_LEFT"
+              spacing="14.0"
+              styleClass="barra-superior">
+
+            <children>
+
+                <Label text="Sistema de Gestión de Usuarios"
+                       styleClass="barra-titulo"/>
+
+                <Label text="JAVALOGIN"
+                       styleClass="barra-tag"/>
+
+            </children>
+        </HBox>
+
+        <!-- Contenido centrado -->
+        <StackPane AnchorPane.topAnchor="52.0"
+                    AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0">
+
+            <children>
+
+                <VBox alignment="TOP_CENTER"
+                      prefWidth="440.0"
+                      spacing="14.0"
+                      styleClass="tarjeta-login">
+
+                    <children>
+
+                        <Label text="JAVALOGIN"
+                               styleClass="logo-login"/>
+
+                        <Label text="Estimado usuario, ingresa tus datos para continuar"
+                               wrapText="true"
+                               prefWidth="340.0"
+                               styleClass="subtitulo-login"/>
+
+                        <HBox alignment="CENTER_LEFT"
+                              spacing="12.0">
+
+                            <children>
+
+                                <VBox spacing="6.0"
+                                      HBox.hgrow="ALWAYS">
+
+                                    <children>
+
+                                        <Label text="Usuario"
+                                               styleClass="etiqueta"/>
+
+                                        <TextField fx:id="txtUsuario"
+                                                   promptText="Escribe tu usuario"
+                                                   prefHeight="46.0"
+                                                   prefWidth="270.0"
+                                                   styleClass="campo"/>
+
+                                    </children>
+                                </VBox>
+
+                                <Label text="👤"
+                                       styleClass="icono-circulo"/>
+
+                            </children>
+                        </HBox>
+
+                        <HBox alignment="CENTER_LEFT"
+                              spacing="12.0">
+
+                            <children>
+
+                                <VBox spacing="6.0"
+                                      HBox.hgrow="ALWAYS">
+
+                                    <children>
+
+                                        <Label text="Contraseña"
+                                               styleClass="etiqueta"/>
+
+                                        <PasswordField fx:id="txtPassword"
+                                                       promptText="Escribe tu contraseña"
+                                                       prefHeight="46.0"
+                                                       prefWidth="270.0"
+                                                       styleClass="campo"
+                                                       onAction="#eventoInicioSesion"/>
+
+                                    </children>
+                                </VBox>
+
+                                <Label text="🔒"
+                                       styleClass="icono-circulo"/>
+
+                            </children>
+                        </HBox>
+
+                        <Label fx:id="lblMensaje"
+                               text=""
+                               wrapText="true"
+                               prefWidth="360.0"
+                               styleClass="mensaje"/>
+
+                        <Button fx:id="btniniciarSesion"
+                                text="Ingresar al sistema"
+                                onAction="#eventoInicioSesion"
+                                prefHeight="48.0"
+                                prefWidth="360.0"
+                                defaultButton="true"
+                                styleClass="boton-ingresar"/>
+
+                        <Label text="El acceso depende del rol registrado en el sistema."
+                               wrapText="true"
+                               prefWidth="360.0"
+                               styleClass="nota"/>
+
+                        <Hyperlink fx:id="lnkRegistro"
+                                   text="¿No tienes cuenta? Regístrate aquí"
+                                   onAction="#eventoAbrirRegistro"
+                                   styleClass="enlace-registro"/>
+
+                    </children>
+                </VBox>
+
+            </children>
+        </StackPane>
+
+    </children>
+</AnchorPane>
 
