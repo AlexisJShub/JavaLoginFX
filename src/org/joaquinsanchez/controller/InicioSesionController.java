@@ -103,7 +103,7 @@ public class InicioSesionController implements Initializable {
 
             case "admin":
                 rutaFXML =
-                        "/org/js/view/AdminDashboardView.fxml";
+                        "/org/joaquinsanchez/view/AdminDashboardView.fxml";
 
                 tituloDashboard =
                         "Panel de Administración";
@@ -111,7 +111,7 @@ public class InicioSesionController implements Initializable {
 
             case "empleado":
                 rutaFXML =
-                        "/org/js/view/EmpleadoDashboardView.fxml";
+                        "/org/joaquinsanchez/view/EmpleadoDashboardView.fxml";
 
                 tituloDashboard =
                         "Panel de Empleado";
@@ -119,7 +119,7 @@ public class InicioSesionController implements Initializable {
 
             case "cajero":
                 rutaFXML =
-                        "/org/js/view/CajeroDashboardView.fxml";
+                        "/org/joaquinsanchez/view/CajeroDashboardView.fxml";
 
                 tituloDashboard =
                         "Panel de Cajero";
@@ -241,7 +241,7 @@ public class InicioSesionController implements Initializable {
         try {
 
             URL archivoFXML =
-                    getClass().getResource("/org/js/view/RegistroView.fxml");
+                    getClass().getResource("/org/joaquinsanchez/view/RegistroView.fxml");
 
             Parent raiz =
                     FXMLLoader.load(archivoFXML);

@@ -43,7 +43,7 @@ public class CajeroDashboardController implements Initializable {
         try {
             FXMLLoader cargadorFXML = new FXMLLoader(
                     getClass().getResource(
-                            "/org/js/view/InicioSesionView.fxml"
+                            "/org/joaquinsanchez/view/inicioSesionView.fxml"
                     )
             );
 

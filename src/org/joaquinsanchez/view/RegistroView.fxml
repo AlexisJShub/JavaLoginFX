@@ -19,7 +19,7 @@
             fx:controller="org.joaquinsanchez.controller.RegistroController">
 
     <stylesheets>
-        <URL value="@/org/joaquinsanchez/view/style/registrovista.css"/>
+        <URL value="@/org/joaquinsanchez/view/style/registroview.css"/>
     </stylesheets>
 
     <children>

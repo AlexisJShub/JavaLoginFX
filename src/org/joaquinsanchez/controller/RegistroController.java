@@ -148,7 +148,7 @@ public class RegistroController implements Initializable {
         try {
 
             URL archivoFXML =
-                    getClass().getResource("/org/js/view/inicioSesionView.fxml");
+                    getClass().getResource("/org/joaquinsanchez/view/inicioSesionView.fxml");
 
             Parent raiz =
                     FXMLLoader.load(archivoFXML);

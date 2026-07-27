@@ -45,7 +45,7 @@ public class AdminDashboardController implements Initializable {
         try {
 
             URL archivoFXML = getClass().getResource(
-                    "/org/js/view/UsuarioView.fxml"
+                    "/org/joaquinsanchez/view/UsuarioView.fxml"
             );
 
             if (archivoFXML == null) {
@@ -93,7 +93,7 @@ public class AdminDashboardController implements Initializable {
         try {
 
             URL archivoFXML = getClass().getResource(
-                    "/org/js/view/InicioSesionView.fxml"
+                    "/org/joaquinsanchez/view/inicioSesionView.fxml"
             );
 
             if (archivoFXML == null) {
