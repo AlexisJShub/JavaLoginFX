@@ -1,1 +1,139 @@
+.fondo-registro {
+    -fx-background-color: linear-gradient(
+        to bottom left,
+        #7a1013,
+        #d1382a,
+        #7a1013
+    );
+    -fx-font-family: "Segoe UI";
+}
+
+.tarjeta-registro {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-padding: 26 45 26 45;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(60, 8, 8, 0.35),
+        30,
+        0,
+        0,
+        10
+    );
+}
+
+.logo-registro {
+    -fx-text-fill: #b3211c;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.titulo-registro {
+    -fx-text-fill: #3b0f0f;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo-registro {
+    -fx-text-fill: #93756f;
+    -fx-font-size: 12.5px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.fila-chips {
+    -fx-padding: 4 0 4 0;
+}
+
+.chip-rol {
+    -fx-background-color: #fbeceb;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #7a3530;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-border-color: #f0d3d0;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+}
+
+.chip-rol:hover {
+    -fx-background-color: #f6dcda;
+}
+
+.chip-rol:selected {
+    -fx-background-color: #b3211c;
+    -fx-text-fill: white;
+    -fx-border-color: #b3211c;
+}
+
+.etiqueta-registro {
+    -fx-text-fill: #4a2422;
+    -fx-font-size: 12.5px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.campo-registro {
+    -fx-background-color: #fdf5f4;
+    -fx-border-color: #eed3d0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+    -fx-background-radius: 9px;
+    -fx-padding: 0 14 0 14;
+    -fx-font-size: 13px;
+    -fx-text-fill: #362221;
+    -fx-prompt-text-fill: #b19894;
+}
+
+.campo-registro:hover {
+    -fx-border-color: #dda9a4;
+}
+
+.campo-registro:focused {
+    -fx-background-color: white;
+    -fx-border-color: #b3211c;
+    -fx-border-width: 2px;
+}
+
+.boton-crear-cuenta {
+    -fx-background-color: #b3211c;
+    -fx-background-radius: 9px;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.boton-crear-cuenta:hover {
+    -fx-background-color: #8f1a16;
+}
+
+.boton-crear-cuenta:pressed {
+    -fx-background-color: #731410;
+}
+
+.mensaje-registro {
+    -fx-text-fill: #c43d3d;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: bold;
+    -fx-min-height: 18px;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}
+
+.enlace-volver {
+    -fx-text-fill: #b3211c;
+    -fx-font-size: 12.5px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-underline: false;
+}
+
+.enlace-volver:hover {
+    -fx-text-fill: #731410;
+    -fx-underline: true;
+}
 

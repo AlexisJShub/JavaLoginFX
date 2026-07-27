@@ -1,1 +1,159 @@
+.fondo-principal {
+    -fx-background-color: #fbf4f0;
+    -fx-font-family: "Segoe UI";
+}
 
+/* Menú lateral */
+
+.menu-lateral {
+    -fx-background-color: #6b2313;
+    -fx-padding: 35 20 25 20;
+}
+
+.logo {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 5 0;
+}
+
+.rol {
+    -fx-text-fill: #e4b39e;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 25 0;
+}
+
+.boton-menu,
+.boton-menu-activo,
+.boton-salir {
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12 16 12 16;
+}
+
+.boton-menu {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f6e1d5;
+}
+
+.boton-menu:hover {
+    -fx-background-color: #8a3419;
+}
+
+.boton-menu-activo {
+    -fx-background-color: #c2410c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.boton-salir {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffb89f;
+    -fx-translate-y: 170;
+}
+
+.boton-salir:hover {
+    -fx-background-color: #8a3419;
+}
+
+/* Encabezado */
+
+.encabezado {
+    -fx-background-color: white;
+    -fx-padding: 22 40 20 40;
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(107, 35, 19, 0.10),
+        12,
+        0,
+        0,
+        3
+    );
+}
+
+.titulo {
+    -fx-text-fill: #4a1c0d;
+    -fx-font-size: 23px;
+    -fx-font-weight: bold;
+}
+
+.bienvenida {
+    -fx-text-fill: #977265;
+    -fx-font-size: 14px;
+}
+
+/* Contenido */
+
+.subtitulo {
+    -fx-text-fill: #4a1c0d;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.tarjeta {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(107, 35, 19, 0.12),
+        15,
+        0,
+        0,
+        4
+    );
+}
+
+.tarjeta-titulo {
+    -fx-text-fill: #7d5445;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.tarjeta-numero {
+    -fx-text-fill: #c2410c;
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 0 2 0;
+}
+
+.tarjeta-numero-pequeno {
+    -fx-text-fill: #c2410c;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 4 0;
+}
+
+.tarjeta-descripcion {
+    -fx-text-fill: #af8a7c;
+    -fx-font-size: 12px;
+}
+
+.panel-informacion {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(107, 35, 19, 0.10),
+        15,
+        0,
+        0,
+        4
+    );
+}
+
+.panel-titulo {
+    -fx-text-fill: #4a1c0d;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 15 0;
+}
+
+.panel-texto {
+    -fx-text-fill: #937263;
+    -fx-font-size: 14px;
+}
