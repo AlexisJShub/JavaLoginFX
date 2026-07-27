@@ -6,20 +6,25 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
 public class Main extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        
+        Parent root = FXMLLoader.load(getClass().getResource("/org/joaquinsanchez/view/inicioSesionView.fxml"));
+        
+        // Creamos la escena y le pasamos el FXML cargado
+        Scene scene = new Scene(root);
+        
+        // Configuramos la ventana (Stage)
+        primaryStage.setTitle("Sistema - Inicio de Sesión");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false); 
+        primaryStage.show();
     }
 
-    @Override
-    public void start(Stage escenarioPrincipal) throws Exception {
-        Parent raiz = FXMLLoader.load(getClass().getResource("/org/js/view/InicioSesionView.fxml"));
-        Scene escena = new Scene(raiz);
+    public static void main(String[] args) {
         
-        escenarioPrincipal.setScene(escena);
-        escenarioPrincipal.show();
+        launch(args);
     }
-    
 }

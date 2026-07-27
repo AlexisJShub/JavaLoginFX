@@ -17,10 +17,10 @@
             styleClass="fondo-principal"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.js.controller.UsuarioController">
+            fx:controller="org.joaquinsanchez.controller.UsuarioController">
 
     <stylesheets>
-        <URL value="@/org/js/view/style/usuarioview.css"/>
+        <URL value="@/org/joaquinsanchez/view/style/usuarioview.css"/>
     </stylesheets>
 
     <children>

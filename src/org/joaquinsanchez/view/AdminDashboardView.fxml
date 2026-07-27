@@ -12,10 +12,10 @@
             styleClass="fondo-principal"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.js.controller.AdminDashboardController">
+            fx:controller="org.joaquinsanchez.controller.AdminDashboardController">
 
     <stylesheets>
-        <URL value="@/org/js/view/style/admindashboardview.css"/>
+        <URL value="@/org/joaquinsanchez/view/style/admindashboardview.css"/>
     </stylesheets>
 
     <children>

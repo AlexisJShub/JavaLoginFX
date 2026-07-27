@@ -12,10 +12,10 @@
             styleClass="fondo-principal"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.js.controller.CajeroDashboardController">
+            fx:controller="org.joaquinsanchez.controller.CajeroDashboardController">
 
     <stylesheets>
-        <URL value="@/org/js/view/style/cajerodashboardview.css"/>
+        <URL value="@/org/joaquinsanchez/view/style/cajerodashboardview.css"/>
     </stylesheets>
 
     <children>

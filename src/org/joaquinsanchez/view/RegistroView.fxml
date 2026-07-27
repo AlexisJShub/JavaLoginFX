@@ -16,10 +16,10 @@
             styleClass="fondo-registro"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.js.controller.RegistroController">
+            fx:controller="org.joaquinsanchez.controller.RegistroController">
 
     <stylesheets>
-        <URL value="@/org/js/view/style/registrovista.css"/>
+        <URL value="@/org/joaquinsanchez/view/style/registrovista.css"/>
     </stylesheets>
 
     <children>
@@ -119,4 +119,3 @@
 
     </children>
 </AnchorPane>
-
