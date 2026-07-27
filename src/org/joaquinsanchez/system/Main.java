@@ -1,12 +1,25 @@
 package org.joaquinsanchez.system;
 
-public class Main {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-    /**
-     * @param args the command line arguments
-     */
+
+public class Main extends Application {
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage escenarioPrincipal) throws Exception {
+        Parent raiz = FXMLLoader.load(getClass().getResource("/org/js/view/InicioSesionView.fxml"));
+        Scene escena = new Scene(raiz);
+        
+        escenarioPrincipal.setScene(escena);
+        escenarioPrincipal.show();
     }
     
 }
